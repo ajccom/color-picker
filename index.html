@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+  <link rel="stylesheet" href="./color-picker.css">
+</head>
+<body>
+  <script src="./color-picker.js"></script>
+  <script>
+    // colorPicker.init(document.body)
+    
+    /**
+     * with callback
+     */    
+    colorPicker.init(document.body, function (rgb, hex) {
+      console.log(rgb, hex)
+    })
+    
+  </script>
+</body>
+</html>
